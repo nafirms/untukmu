@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan dan Puisi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page1" class="container">
+        <header>
+            <h1>Hi My Queen</h1>
+        </header>
+        <main>
+            <p>Aku punya sesuatu untukmu di hari ini</p>
+            <p>Dibaca yah! Semoga suka</p>
+            <button onclick="showPage('page2')">Next</button>
+        </main>
+    </div>
+
+    <div id="page2" class="container" style="display: none;">
+        <header>
+            <h1>Kepada Cinta di Hari Ulang Tahunmu</h1>
+        </header>
+        <main>
+            <section class="poem">
+                <div class="poem-content">
+                    <div class="paragraph">
+                        <p>Hari ini adalah milikmu,</p>
+                        <p>Saat bintang merendah memberi cahaya,</p>
+                        <p>Dan waktu seakan berhenti sejenak,</p>
+                        <p>ntuk merayakan hadirnya dirimu di dunia.</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Usia bertambah, bagaikan bait puisi,</p>
+                        <p>Yang ditulis dengan tinta kebijaksanaan,</p>
+                        <p>Setiap kenangan adalah guratan cerita,</p>
+                        <p>Menyusun lukisan indah kehidupanmu.</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Selamat ulang tahun, untuk jiwa yang berharga,</p>
+                        <p>Semoga hari ini membawa senyum tanpa batas,</p>
+                        <p>Doa dan harapan mengalir seperti sungai</p>
+                        <p>Menyelimuti langkahmu dengan kebahagiaan.</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Biarkan lilin-lilin kecil menyala,</p>
+                        <p>Mengusir gelap dan membawa terang,</p>
+                        <p>Setiap nyala adalah harapan baru,</p>
+                        <p>Selamat ulang tahun, semoga semua impianmu nyata.</p>
+                    </div>
+                </div>
+            </section>
+            <button onclick="showPage('page1')">Back</button>
+        </main>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
